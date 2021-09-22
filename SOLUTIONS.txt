@@ -1,0 +1,28 @@
+Part A.
+
+All of these begin were found through the use of "/proc/man"
+
+1)The Cpu Model Name is Intel(R) Xenon(R) Gold 6254 CPU @ 3.10GHz. Found
+  through the use of the command "cat /proc/cpuinfo" on the line that 
+  said Model Name:.
+2)The linux version is 3.10.0-01160.41.1.e17.x66_64.. Found through the
+  the command "cat /proc/version".
+3)The ecs server has been running for 62 days 8 hours 59 minutes and 8
+  seconds. Found through the use of "cat /proc/uptime" where both the
+  times were added to given total uptime.
+4)It has spent 2537824 jiffies in user mode, 684507 in system mode, and
+  357860025 jiffies idle mode. Found within "cat /proc/stat" where the
+  first number is the user mode time, the third is system mode, and 
+  the fourth is idle mode.
+5)Total memory configured is 8009260 kb. Found through the use of the
+  command "cat /proc/meminfo" on the line reading memTotal:.
+6)Available memory is 7224272 kb. Found through the use of the command
+  "cat /proc/meminfo" on the line reading memAvailable:.
+7)Total disk read and write request is 418561 read requests and 5958943
+  write request in total. Found through the use of the command "cat 
+  /proc/diskstats" where the fourth number on the line sda is the read
+  requests and the eighth on the sda line being the write requests.
+8)Total context switches is 476648304. Found thorugh the use of the
+  command "cat /proc/stat" on the line reading ctxt.
+9)Total number of processes is 1328115. Found through the use of the 
+  command "cat /proc/stat" under the line processes. 
